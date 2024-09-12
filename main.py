@@ -9,7 +9,7 @@ coefficients = []
 
 # Function to handle quintic function input
 def fn_quintica():
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     input_window = tk.Toplevel()
@@ -61,7 +61,6 @@ def fn_quintica():
 
 # Function to plot the quintic graph
 def grafico_quintico(coefficients):
-    # Unpack the coefficients (a, b, c, d, e, f)
     a, b, c, d, e, f = coefficients
 
     # Generate x values for the plot
@@ -82,7 +81,7 @@ def grafico_quintico(coefficients):
 
 # Function for Action 2
 def calcolo_quintico():
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     action_window = tk.Toplevel()
@@ -99,7 +98,7 @@ def calcolo_quintico():
         try:
             x = float(x_entry.get())
         except ValueError:
-            messagebox.showerror("Errore", "Assicurati di inserire un numero valido.")
+            messagebox.showerror("Errore", "Numero invalido.")
             return
 
         # Unpack the coefficients (a, b, c, d, e, f)
@@ -124,7 +123,7 @@ def calcolo_quintico():
 
 
 def fn_goniometrica():
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     input_window = tk.Toplevel()
@@ -220,7 +219,7 @@ def grafico_goniometrico(func_type, a, b, c):
 
 # Function to calculate y for the trigonometric function
 def calcolo_goniometrico(a, b, c):
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     action_window = tk.Toplevel()
@@ -237,7 +236,7 @@ def calcolo_goniometrico(a, b, c):
         try:
             x = float(x_entry.get())
         except ValueError:
-            messagebox.showerror("Errore", "Assicurati di inserire un numero valido.")
+            messagebox.showerror("Errore", "Numero invalido.")
             return
 
         # Calculate the corresponding y value based on the selected function
@@ -265,7 +264,7 @@ def calcolo_goniometrico(a, b, c):
 
 # Function to handle logarithmic function input
 def fn_logaritmica():
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     input_window = tk.Toplevel()
@@ -351,7 +350,7 @@ def grafico_logaritmico(a, base, b, c):
 
 # Function to calculate y for the logarithmic function
 def calcolo_logaritmico(a, base, b, c):
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     action_window = tk.Toplevel()
@@ -368,7 +367,7 @@ def calcolo_logaritmico(a, base, b, c):
         try:
             x = float(x_entry.get())
         except ValueError:
-            messagebox.showerror("Errore", "Assicurati di inserire un numero valido.")
+            messagebox.showerror("Errore", "Numero invalido.")
             return
 
         # Calculate the corresponding y value based on the input x
@@ -390,7 +389,7 @@ def calcolo_logaritmico(a, base, b, c):
 
 # Function to handle exponential function input
 def fn_esponenziale():
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     input_window = tk.Toplevel()
@@ -464,7 +463,7 @@ def grafico_esponenziale(base, a, b):
 
 # Function for Action 2 for exponential function
 def calcolo_esponenziale(base, a, b):
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     action_window = tk.Toplevel()
@@ -481,7 +480,7 @@ def calcolo_esponenziale(base, a, b):
         try:
             x = float(x_entry.get())
         except ValueError:
-            messagebox.showerror("Errore", "Assicurati di inserire un numero valido.")
+            messagebox.showerror("Errore", "Numero invalido.")
             return
 
         # Calculate the corresponding y value based on the exponential function
@@ -502,7 +501,7 @@ def calcolo_esponenziale(base, a, b):
     submit_button.grid(row=1, columnspan=2, pady=10)
 
 def fn_fratta():
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     input_window = tk.Toplevel()
@@ -598,7 +597,7 @@ def grafico_fratta(a, b, c, d):
     plt.show()
 
 def calcolo_fratta(a, b, c, d):
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     action_window = tk.Toplevel()
@@ -615,7 +614,7 @@ def calcolo_fratta(a, b, c, d):
         try:
             x = float(x_entry.get())
         except ValueError:
-            messagebox.showerror("Errore", "Assicurati di inserire un numero valido.")
+            messagebox.showerror("Errore", "Numero invalido.")
             return
 
         # Check if both c and d are 0
@@ -642,7 +641,7 @@ def calcolo_fratta(a, b, c, d):
 
 
 def fn_irrazionale():
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     input_window = tk.Toplevel()
@@ -695,7 +694,7 @@ def fn_irrazionale():
 
 # Function to calculate y for a given x
 def calcolo_irrazionale():
-    window.withdraw()  # Hide the main window
+    window.withdraw()   
 
     # Create a new window for input
     action_window = tk.Toplevel()
@@ -718,7 +717,7 @@ def calcolo_irrazionale():
             y = a * m.sqrt(b * x) + c
             messagebox.showinfo("Funzione irrazionale", f"Per x = {x}, y = {y}")
         except ValueError:
-            messagebox.showerror("Errore", "Assicurati di inserire un numero valido.")
+            messagebox.showerror("Errore", "Numero invalido.")
             return
 
         # Close the input window

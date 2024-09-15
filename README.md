@@ -4,7 +4,6 @@ Necessary libraries:
 - tkinter
 - matplotlib
 - numpy
-- tkinter
 - math
 
 This program is a basic graphic calculator, which uses matplotlib to display the graphs. It can also calculate a value of Y given the value of X.
